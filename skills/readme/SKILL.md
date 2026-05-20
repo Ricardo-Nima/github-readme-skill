@@ -86,10 +86,11 @@ Project size is determined by counting source files via Glob. Source file defini
 Generated READMEs should use the following GitHub extended syntax (intelligently selected based on project characteristics):
 
 **Required (all READMEs)**:
-1. **Badges** (`<img alt="...">`): Tests, License, Version, Language
+1. **Badges** (`<div align="center"><img alt="...">...</div>`): Tests, License, Version, Language. MUST wrap all badges in `<div align="center">` to render them horizontally centered. Badges are placed inline (no blank lines between `<img>` tags) inside the centered div.
 2. **Code blocks** (with language annotation: ```python, ```bash, etc.)
 3. **Tables**: API reference, configuration options, dependency lists
 4. **Anchor links**: Table of contents navigation
+5. **Language switcher** (MUST include if generating >= 2 languages): A `<p align="center">` block between the title/badges and the TOC, linking to all language versions with flag emojis.
 
 **Conditional**:
 5. **Alerts** (`> [!NOTE]`, `> [!WARNING]`, `> [!IMPORTANT]`, `> [!CAUTION]`): Select appropriate type based on content
@@ -319,7 +320,8 @@ If interrupted and resumed, first check for checkpoint files, continue from the 
    - License
 
 2. **Apply GitHub extended syntax**:
-   - Badges: Tests, License, Version, Language — using `<img alt="...">` format
+   - Badges: Tests, License, Version, Language — using `<div align="center"><img alt="...">...</div>` format. All badge `<img>` tags MUST be inside a centered div, placed inline with no blank lines between them to render horizontally.
+   - Language switcher (when >= 2 languages): A `<p align="center">` block right after badges (before TOC), containing flag emoji + links to all language versions. Example: `<p align="center">🇺🇸 <a href="./README.md">English</a> | 🇨🇳 <a href="./README.zh.md">简体中文</a></p>`
    - Code blocks: all code examples with language annotation
    - Tables: API reference, configuration options presented as tables
    - Anchor links: each section in TOC with anchors
@@ -383,7 +385,19 @@ If interrupted and resumed, first check for checkpoint files, continue from the 
    - Alert block titles translated (e.g., `> [!NOTE]` → localized equivalent)
    - Mermaid diagram node labels translated
 
-3. **Processing flow**:
+3. **Language switcher (MANDATORY for >= 2 languages)**:
+   - Insert a `<p align="center">` language switcher in EVERY translated README, positioned after the badges and before the TOC
+   - Use flag emojis: 🇺🇸 English, 🇨🇳 简体中文, 🇯🇵 日本語, 🇰🇷 한국어, 🇫🇷 Français, 🇩🇪 Deutsch
+   - Link each flag to the corresponding `README.{lang}.md` (or `README.md` for the default language)
+   - Example for zh,en output:
+     ```html
+     <p align="center">
+     🇺🇸 <a href="./README.md">English</a> | 🇨🇳 <a href="./README.zh.md">简体中文</a>
+     </p>
+     ```
+   - The language switcher content itself is NOT translated — it stays identical across all language versions
+
+4. **Processing flow**:
    - If target languages > 2, process each language sequentially
    - Write `README.{lang}.md` after each language translation completes
    - Save progress between each language translation
@@ -426,7 +440,8 @@ If interrupted and resumed, first check for checkpoint files, continue from the 
 The following quality check results must be included in the output summary after generation:
 
 ### Structural Completeness (Required Items Check)
-- [ ] Title with badges
+- [ ] Title with horizontally centered badges (`<div align="center">`)
+- [ ] Language switcher (MANDATORY if >= 2 languages; `<p align="center">` with flag emoji links to all language versions)
 - [ ] TOC with anchor links
 - [ ] Introduction section
 - [ ] Installation section
@@ -442,7 +457,8 @@ The following quality check results must be included in the output summary after
 - [ ] Installation commands match package manager
 
 ### GitHub Syntax Usage
-- [ ] Badges (`<img alt="...">`)
+- [ ] Badges (`<div align="center"><img alt="..."></div>` — centered, horizontal)
+- [ ] Language switcher (MANDATORY if >= 2 languages; `<p align="center">` with flag emoji links)
 - [ ] Code blocks (with language annotation)
 - [ ] Tables
 - [ ] Anchor links
