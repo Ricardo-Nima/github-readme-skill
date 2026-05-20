@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "github-readme",
-      "source": "./skills/github-readme",
+      "source": "./skills/readme",
       "description": "Generate high-quality, well-structured README.md files for GitHub repositories. Dual-engine: code analysis + user interview. Supports interview mode and direct mode.",
       "keywords": ["readme", "github", "documentation", "markdown", "generator"]
     }
