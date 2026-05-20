@@ -1,8 +1,8 @@
-# GitHub README 技能
+# GitHub README Skill
 
 <div align="center">
 
-> 🎨 你此刻正在阅读的这篇 README，恰恰就是由`/readme` 技能亲手诞生的！
+> 🎨 你此刻正在阅读的这篇 README，恰恰就是由`/readme` skill亲手诞生的！
 
 </div>
 
@@ -14,9 +14,6 @@
 <img alt="语言" src="https://img.shields.io/badge/语言-Markdown-orange">
 <img alt="平台" src="https://img.shields.io/badge/平台-Claude%20Code-purple">
 
-</div>
-
-<div align="center">
 [English](./README.md) | 简体中文
 </div>
 
