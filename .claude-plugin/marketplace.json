@@ -1,13 +1,18 @@
-﻿{
+{
   "name": "github-readme-skills",
+  "id": "github-readme-skills",
   "owner": {
     "name": "Ricardo-Nima"
+  },
+  "metadata": {
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "github-readme",
       "source": "./skills/github-readme",
-      "description": "Generate high-quality, well-structured README.md files for GitHub repositories. Dual-engine: code analysis + user interview. Supports interview mode and direct mode."
+      "description": "Generate high-quality, well-structured README.md files for GitHub repositories. Dual-engine: code analysis + user interview. Supports interview mode and direct mode.",
+      "keywords": ["readme", "github", "documentation", "markdown", "generator"]
     }
   ]
 }
