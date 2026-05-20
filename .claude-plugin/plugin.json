@@ -1,5 +1,5 @@
 {
-  "name": "github-readme",
+  "name": "readme",
   "version": "1.0.0",
   "description": "Generate high-quality, well-structured README.md files for GitHub repositories. Dual-engine: code analysis + user interview. Supports interview mode and direct mode.",
   "author": "Ricardo-Nima",

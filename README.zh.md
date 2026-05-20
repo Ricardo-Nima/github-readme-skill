@@ -40,7 +40,7 @@
 
 ```bash
 /plugin marketplace add Ricardo-Nima/github-readme-skill
-/plugin install github-readme@github-readme-skills
+/plugin install readme@github-readme-skills
 ```
 
 ## 使用

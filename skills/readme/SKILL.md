@@ -1,5 +1,5 @@
 ---
-name: github-readme
+name: readme
 description: Generate high-quality README files for GitHub repositories. Supports two modes: interview mode (default, full 6-phase pipeline) and direct mode (--mode direct, skip interview and auto-generate). Triggers: /readme, generate README, write README, update README, github-readme.
 argument-hint: "[--mode interview|direct] [--lang zh,en,ja,...] [--force] [project directory]"
 level: 3
