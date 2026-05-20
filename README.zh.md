@@ -1,9 +1,13 @@
 # GitHub README 技能
 
+<div align="center">
+
 <img alt="版本" src="https://img.shields.io/badge/版本-1.0.0-blue">
 <img alt="许可证" src="https://img.shields.io/badge/许可证-MIT-green">
 <img alt="语言" src="https://img.shields.io/badge/语言-Markdown-orange">
 <img alt="平台" src="https://img.shields.io/badge/平台-Claude%20Code-purple">
+
+</div>
 
 一个为 GitHub 仓库生成高质量、结构完整 README.md 文件的 Claude Code 技能。采用代码分析（底层事实）与用户访谈（项目叙事）双引擎驱动，确保 README 既准确反映代码实际，又传达项目的正确叙事。
 

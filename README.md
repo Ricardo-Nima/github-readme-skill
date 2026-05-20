@@ -1,9 +1,13 @@
 # GitHub README Skill
 
+<div align="center">
+
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue">
 <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
 <img alt="Language" src="https://img.shields.io/badge/language-Markdown-orange">
 <img alt="Platform" src="https://img.shields.io/badge/platform-Claude%20Code-purple">
+
+</div>
 
 A Claude Code skill that generates high-quality, well-structured README.md files for GitHub repositories. Dual-engine approach combining code analysis (ground truth) with user interviews (user intent) ensures READMEs are both accurate and well-narrated.
 
