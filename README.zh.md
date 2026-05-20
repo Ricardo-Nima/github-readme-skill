@@ -9,6 +9,8 @@
 
 </div>
 
+[English](./README.md) | 简体中文
+
 一个为 GitHub 仓库生成高质量、结构完整 README.md 文件的 Claude Code 技能。采用代码分析（底层事实）与用户访谈（项目叙事）双引擎驱动，确保 README 既准确反映代码实际，又传达项目的正确叙事。
 
 ## 目录
