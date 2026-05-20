@@ -40,7 +40,7 @@ Install via the plugin marketplace:
 
 ```bash
 /plugin marketplace add Ricardo-Nima/github-readme-skill
-/plugin install readme@github-readme-skills
+/plugin install github-readme-skills@readme-skills
 ```
 
 ## Usage

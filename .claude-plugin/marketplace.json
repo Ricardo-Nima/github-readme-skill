@@ -1,6 +1,6 @@
 {
-  "name": "github-readme-skills",
-  "id": "github-readme-skills",
+  "name": "readme-skills",
+  "id": "readme-skills",
   "owner": {
     "name": "Ricardo-Nima"
   },
@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "readme",
+      "name": "github-readme-skills",
       "source": "./",
       "version": "1.0.0",
       "description": "Generate high-quality, well-structured README.md files for GitHub repositories. Dual-engine: code analysis + user interview. Supports interview mode and direct mode.",
